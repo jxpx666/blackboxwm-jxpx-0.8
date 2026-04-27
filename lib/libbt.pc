@@ -1,0 +1,11 @@
+prefix=/home/jxpx/.local/blackbox-hacked
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: Blackbox Toolbox
+Description: Utility class library for writing small applications
+Version: 0.70.2cvs
+Requires.private: xft >= 2.0.0
+Libs: -L${libdir} -lbt  -L/home/jxpx/.local/blackbox-hacked/lib -L/usr/local/lib  
+Cflags: -I${includedir}/bt
